@@ -10,28 +10,63 @@ export default function DashboardContainer(): JSX.Element {
     const [isLoading, setIsLoading] = useState(true);
 
     const dashboardMenu = [{
-        label: 'Dashboard',
+        label: 'Home',
         onClick: () => {},
         icon: MdDashboard,
         key: 'dashboard'
     }, {
-        label: 'Charts',
+        label: 'Sell',
         onClick: () => {},
-        icon: MdStar,
+        icon: MdDashboard,
         key: 'charts'
     }, {
-        label: 'Settings',
+        label: 'My Page',
+        onClick: () => {},
+        icon: MdDashboard,
+        key: 'charts'
+    }, {
+        label: 'Auction Kust',
+        onClick: () => {},
+        icon: MdDashboard,
+        key: 'charts'
+    }, {
+        label: 'Sequence AA',
+        onClick: () => {},
+        icon: MdDashboard,
+        key: 'charts'
+    }, {
+        label: 'Random AA',
+        onClick: () => {},
+        icon: MdDashboard,
+        key: 'charts'
+    }, {
+        label: 'Market Price',
+        onClick: () => {},
+        icon: MdDashboard,
+        key: 'charts'
+    }, {
+        label: 'Transportation',
+        onClick: () => {},
+        icon: MdDashboard,
+        key: 'charts'
+    }, {
+        label: 'F & I',
+        onClick: () => {},
+        icon: MdDashboard,
+        key: 'charts'
+    }, {
+        label: 'Account',
         icon: MdSettings,
         key: 'settings',
         subMenu: [{
             key: 'one',
-            label: 'One'
+            label: 'Information'
         }, {
             key: 'two',
-            label: 'Two'
+            label: 'Password'
         }, {
             key: 'three',
-            label: 'Three'
+            label: 'Logout'
         }]
     }];
 
