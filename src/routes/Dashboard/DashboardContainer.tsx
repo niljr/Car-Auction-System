@@ -11,9 +11,9 @@ export default function DashboardContainer(): JSX.Element {
     const history = useHistory();
     const [isLoading, setIsLoading] = useState(true);
 
-    const dashboardMenu = [{
+    const menu = [{
         label: 'Home',
-        onClick: () => {},
+        onClick: () => { history.push('/dashboard'); },
         icon: MdDashboard,
         key: 'dashboard'
     }, {
@@ -27,8 +27,8 @@ export default function DashboardContainer(): JSX.Element {
         icon: MdDashboard,
         key: 'charts'
     }, {
-        label: 'Auction Kust',
-        onClick: () => {},
+        label: 'Auction List',
+        onClick: () => { history.push('/auction-list'); },
         icon: MdDashboard,
         key: 'charts'
     }, {
@@ -84,5 +84,5 @@ export default function DashboardContainer(): JSX.Element {
 
     return <DashboardScreen
         isLoading={isLoading}
-        dashboardMenu={dashboardMenu}/>;
+        dashboardMenu={menu}/>;
 }

@@ -23,8 +23,8 @@ export default function SellContainer(): JSX.Element {
         icon: MdDashboard,
         key: 'charts'
     }, {
-        label: 'Auction Kust',
-        onClick: () => {},
+        label: 'Auction List',
+        onClick: () => { history.push('/auction-list'); },
         icon: MdDashboard,
         key: 'charts'
     }, {

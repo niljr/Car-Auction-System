@@ -6,6 +6,7 @@ const AsyncDashboard = PageLoadable({ loader: () => import('./Dashboard') });
 const AsyncSignUp = PageLoadable({ loader: () => import('./SignUp') });
 const AsyncForgotPassword = PageLoadable({ loader: () => import('./ForgotPassword') });
 const AsyncSell = PageLoadable({ loader: () => import('./Sell') });
+const AsyncAuctionList = PageLoadable({ loader: () => import('./AuctionList') });
 // ROUTE IMPORT CODE GENERATOR INDICATOR DO NOT DELETE
 
 const routes = {
@@ -32,6 +33,11 @@ const routes = {
     SELL: {
         component: AsyncSell,
         path: '/sell',
+        authedRoute: true
+    },
+    AUCTION_LIST: {
+        component: AsyncAuctionList,
+        path: '/auction-list',
         authedRoute: true
     },
     // ROUTE ENTRY CODE GENERATOR INDICATOR DO NOT DELETE
