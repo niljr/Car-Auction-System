@@ -1,19 +1,15 @@
-// @flow
-import React, { useEffect, useState } from 'react';
-import { MdDashboard, MdStar, MdSettings } from 'react-icons/md';
+import React from 'react';
+import SellScreen from './SellScreen';
+
+import { MdDashboard, MdSettings } from 'react-icons/md';
 import { useHistory } from 'react-router-dom';
-import { useAppDispatch } from 'redux/hooks';
-import DashboardScreen from './DashboardScreen';
-import { setFlashNotification } from 'redux/modules/flashNotification';
 
-export default function DashboardContainer(): JSX.Element {
-    const dispatch = useAppDispatch();
+export default function SellContainer(): JSX.Element {
     const history = useHistory();
-    const [isLoading, setIsLoading] = useState(true);
 
-    const dashboardMenu = [{
+    const menu = [{
         label: 'Home',
-        onClick: () => {},
+        onClick: () => { history.push('/dashboard'); },
         icon: MdDashboard,
         key: 'dashboard'
     }, {
@@ -72,17 +68,5 @@ export default function DashboardContainer(): JSX.Element {
         }]
     }];
 
-    useEffect(() => {
-        dispatch(setFlashNotification({
-            message: 'LOGGED IN'
-        }));
-
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 1000);
-    }, []);
-
-    return <DashboardScreen
-        isLoading={isLoading}
-        dashboardMenu={dashboardMenu}/>;
+    return <SellScreen menu={menu} />;
 }
