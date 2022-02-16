@@ -5,6 +5,7 @@ const AsyncLogin = PageLoadable({ loader: () => import('./Login') });
 const AsyncDashboard = PageLoadable({ loader: () => import('./Dashboard') });
 const AsyncSignUp = PageLoadable({ loader: () => import('./SignUp') });
 const AsyncForgotPassword = PageLoadable({ loader: () => import('./ForgotPassword') });
+const AsyncRegister = PageLoadable({ loader: () => import('./Register') });
 // ROUTE IMPORT CODE GENERATOR INDICATOR DO NOT DELETE
 
 const routes = {
@@ -26,6 +27,11 @@ const routes = {
     FORGOT_PASSWORD: {
         component: AsyncForgotPassword,
         path: '/forgot-password',
+        authedRoute: false
+    },
+    REGISTER: {
+        component: AsyncRegister,
+        path: '',
         authedRoute: false
     },
     // ROUTE ENTRY CODE GENERATOR INDICATOR DO NOT DELETE

@@ -27,6 +27,8 @@ export default function LoginScreen({ onSubmit, isProcessing }: Props): JSX.Elem
                     submitLabel='Login'
                     isProcessing={isProcessing} />
                 <Link to='/forgot-password'>Forgot your password?</Link>
+                <br/>
+                <Link to='/register'>Don't have an account yet?</Link>
             </div>
         </div>
     );
