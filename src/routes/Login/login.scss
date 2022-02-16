@@ -17,8 +17,18 @@
     &__form {
         width: 100%;
 
+        .app-form__submit {
+            background-color: red;
+            color:azure;
+            border-color: red;
+        }
+
         .form-row {
             margin-bottom: $spacing-half;
         }
+    }
+
+    &__link {
+        color: red;
     }
 }
