@@ -6,6 +6,7 @@ const AsyncDashboard = PageLoadable({ loader: () => import('./Dashboard') });
 const AsyncSignUp = PageLoadable({ loader: () => import('./SignUp') });
 const AsyncForgotPassword = PageLoadable({ loader: () => import('./ForgotPassword') });
 const AsyncRegister = PageLoadable({ loader: () => import('./Register') });
+const AsyncRegisterPayment = PageLoadable({ loader: () => import('./RegisterPayment') });
 // ROUTE IMPORT CODE GENERATOR INDICATOR DO NOT DELETE
 
 const routes = {
@@ -31,6 +32,11 @@ const routes = {
     },
     REGISTER: {
         component: AsyncRegister,
+        path: '',
+        authedRoute: false
+    },
+    REGISTER_PAYMENT: {
+        component: AsyncRegisterPayment,
         path: '',
         authedRoute: false
     },
