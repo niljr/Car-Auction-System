@@ -10,21 +10,16 @@
     &__content {
         margin:$spacing;
         width: 100%;
-        // overflow: scroll;
 
         &-form {
-            // width: 100%;
         margin-top: $spacing-half;
-
            
             .form-row {
-                // padding-right: $spacing-half;
-                // display: inline-flex;
-                // flex-flow: wrap;
-                // gap: 10px;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid: 1rem;
+
+
                 .form-group {
                     // margin: 5px
                     width: 95%;

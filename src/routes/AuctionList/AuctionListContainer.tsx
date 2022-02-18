@@ -6,8 +6,12 @@ import Image from 'react-bootstrap/Image';
 import Button from 'components/base/Button';
 import AuctionListScreen from './AuctionListScreen';
 
-export default function AuctionListContainer(): JSX.Element {
+export default function AuctionListContainer({ }): JSX.Element {
     const history = useHistory();
+
+    const goToPageUnit = () => {
+        history.push('/auction-unit');
+    };
 
     const menu = [{
         label: 'Home',
@@ -102,9 +106,9 @@ export default function AuctionListContainer(): JSX.Element {
             fuel: '98,400',
             color: 'White',
             inspection_grade: 'B',
-            starting_price: 1700000,
-            current_price: 1710000,
-            bid: <Button label='bid'/>,
+            starting_price: 'P 1,700,000.00',
+            current_price: 'P 1,710,000.00',
+            bid: <Button onClick={goToPageUnit} label='bid'/>,
             number_bids: 6
         },
         {
@@ -120,9 +124,9 @@ export default function AuctionListContainer(): JSX.Element {
             fuel: '98,400',
             color: 'White',
             inspection_grade: 'B',
-            starting_price: 1700000,
-            current_price: 1710000,
-            bid: <Button label='bid'/>,
+            starting_price: 'P 1,700,000.00',
+            current_price: 'P 1,710,000.00',
+            bid: <Button onClick={goToPageUnit} label='bid'/>,
             number_bids: 6
         },
         {
@@ -138,9 +142,9 @@ export default function AuctionListContainer(): JSX.Element {
             fuel: '98,400',
             color: 'White',
             inspection_grade: 'B',
-            starting_price: 1700000,
-            current_price: 1710000,
-            bid: <Button label='bid'/>,
+            starting_price: 'P 1,700,000.00',
+            current_price: 'P 1,710,000.00',
+            bid: <Button onClick={goToPageUnit} label='bid'/>,
             number_bids: 6
         }
     ];

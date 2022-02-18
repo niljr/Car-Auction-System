@@ -21,7 +21,7 @@ export default function SellScreen({ menu }: Props): JSX.Element {
                 <Typography size={40} weight='bold'>Sell Your Car!</Typography>
                 <Form
                     className='sell__content-form'
-                    isShowLabels={false}
+                    isShowLabels={true}
                     structure={formStructure}
                     onSubmitForm={() => {}}
                     schema={schema}
