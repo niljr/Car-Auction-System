@@ -1,12 +1,12 @@
 import React from 'react';
-import { MdDashboard, MdStar, MdSettings } from 'react-icons/md';
+import { MdDashboard, MdSettings } from 'react-icons/md';
 import { useHistory } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
 
 import Button from 'components/base/Button';
 import AuctionListScreen from './AuctionListScreen';
 
-export default function AuctionListContainer({ }): JSX.Element {
+export default function AuctionListContainer(): JSX.Element {
     const history = useHistory();
 
     const goToPageUnit = () => {

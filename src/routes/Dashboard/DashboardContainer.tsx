@@ -1,6 +1,6 @@
 // @flow
 import React, { useEffect, useState } from 'react';
-import { MdDashboard, MdStar, MdSettings } from 'react-icons/md';
+import { MdDashboard, MdSettings } from 'react-icons/md';
 import { useHistory } from 'react-router-dom';
 import { useAppDispatch } from 'redux/hooks';
 import DashboardScreen from './DashboardScreen';
