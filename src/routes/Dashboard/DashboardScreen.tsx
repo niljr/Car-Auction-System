@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import CollapsibleSidebar from 'components/base/CollapsibleSidebar/CollapsibleSidebarContainer';
+import NavBar from 'components/base/Navbar/Navbar';
 import Typography from 'components/base/Typography/Typography';
 import { Menu } from 'types';
 import Calendar from 'react-calendar';
@@ -16,8 +17,6 @@ type Props = {
 export default function DashboardScreen({ dashboardMenu }: Props): JSX.Element {
     return (
         <div className='dashboard'>
-            <CollapsibleSidebar
-                menu={dashboardMenu} />
 
             <div className='dashboard__container'>
                 <div className='dashboard__calendar-container'>

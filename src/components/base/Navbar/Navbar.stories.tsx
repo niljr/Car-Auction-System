@@ -11,5 +11,5 @@ const Template: ComponentStory<typeof NavbarComponent> = (args) => <NavbarCompon
 
 export const Navbar = Template.bind({});
 Navbar.args = {
-    // TODO add args
+    
 };

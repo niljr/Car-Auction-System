@@ -3,7 +3,46 @@
 @import 'styles/_mixins';
 
 .navbar {
-    padding: 0 $spacing;
-    height: $height-navmenu;
-    box-shadow: 0 2px $color-shadow;
+    position: fixed;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 50px;
+
+    &__list {
+        list-style-type: none;
+        height: 150%;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        background-color: orangered;
+        position: relative;
+    }
+
+    &__navBtn {
+        background-color: orangered;
+        align-items: center;
+        margin-right: 24px;
+        font-size: 20px;
+        color: azure;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    &__navBtnRight {
+        background-color: orange;
+        align-items: center;
+        margin-right: 20px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: azure;
+        padding: 5px;
+        cursor: pointer;
+    }
+
 }
