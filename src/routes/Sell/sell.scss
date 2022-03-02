@@ -1,0 +1,31 @@
+
+@import 'styles/_variables';
+@import 'styles/_mixins';
+
+.sell {
+    height: 100%;
+    display: flex;
+    width: 100%;
+
+    &__content {
+        margin:$spacing;
+        width: 100%;
+
+        &-form {
+        margin-top: $spacing-half;
+           
+            .form-row {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid: 1rem;
+
+
+                .form-group {
+                    // margin: 5px
+                    width: 95%;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
