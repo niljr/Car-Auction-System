@@ -80,7 +80,7 @@ $font-bold: 700;
 $spacing: 1.75rem;
 $spacing-double: $spacing * 2;
 $spacing-third: $spacing * 3;
-$spacing-half: $spacing / 2;
+$spacing-half: calc($spacing / 2);
 
 $page-side-paddings: (
     xl: 70px,
