@@ -5,6 +5,7 @@ const AsyncLogin = PageLoadable({ loader: () => import('./Login') });
 const AsyncDashboard = PageLoadable({ loader: () => import('./Dashboard') });
 const AsyncSignUp = PageLoadable({ loader: () => import('./SignUp') });
 const AsyncForgotPassword = PageLoadable({ loader: () => import('./ForgotPassword') });
+const AsyncRegister = PageLoadable({ loader: () => import('./Register') });
 const AsyncSell = PageLoadable({ loader: () => import('./Sell') });
 const AsyncAuctionList = PageLoadable({ loader: () => import('./AuctionList') });
 const AsyncAuctionUnit = PageLoadable({ loader: () => import('./AuctionUnit') });
@@ -31,6 +32,10 @@ const routes = {
         path: '/forgot-password',
         authedRoute: false
     },
+    REGISTER: {
+        component: AsyncRegister,
+        path: '',
+        authedRoute: false
     SELL: {
         component: AsyncSell,
         path: '/sell',
