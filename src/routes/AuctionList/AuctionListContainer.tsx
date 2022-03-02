@@ -149,8 +149,14 @@ export default function AuctionListContainer({ }): JSX.Element {
         }
     ];
 
+    const ranNum = Math.floor(Math.random() * carList.length);
+
+    const userCarList = [];
+
+    userCarList.push(carList[ranNum]);
+
     return <AuctionListScreen
         menu={menu}
         tableHeader={tableHeader}
-        carList={carList}/>;
+        carList={userCarList}/>;
 }
