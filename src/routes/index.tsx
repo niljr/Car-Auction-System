@@ -5,6 +5,10 @@ const AsyncLogin = PageLoadable({ loader: () => import('./Login') });
 const AsyncDashboard = PageLoadable({ loader: () => import('./Dashboard') });
 const AsyncSignUp = PageLoadable({ loader: () => import('./SignUp') });
 const AsyncForgotPassword = PageLoadable({ loader: () => import('./ForgotPassword') });
+const AsyncRegister = PageLoadable({ loader: () => import('./Register') });
+const AsyncSell = PageLoadable({ loader: () => import('./Sell') });
+const AsyncAuctionList = PageLoadable({ loader: () => import('./AuctionList') });
+const AsyncAuctionUnit = PageLoadable({ loader: () => import('./AuctionUnit') });
 // ROUTE IMPORT CODE GENERATOR INDICATOR DO NOT DELETE
 
 const routes = {
@@ -27,6 +31,25 @@ const routes = {
         component: AsyncForgotPassword,
         path: '/forgot-password',
         authedRoute: false
+    },
+    REGISTER: {
+        component: AsyncRegister,
+        path: '',
+        authedRoute: false
+    SELL: {
+        component: AsyncSell,
+        path: '/sell',
+        authedRoute: true
+    },
+    AUCTION_LIST: {
+        component: AsyncAuctionList,
+        path: '/auction-list',
+        authedRoute: true
+    },
+    AUCTION_UNIT: {
+        component: AsyncAuctionUnit,
+        path: '/auction-unit',
+        authedRoute: true
     },
     // ROUTE ENTRY CODE GENERATOR INDICATOR DO NOT DELETE
     NOT_FOUND: {
