@@ -2,20 +2,34 @@
 @import 'styles/_variables';
 @import 'styles/_mixins';
 
-.login {
+.register {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: auto;
 
     &__wrapper {
-        width: 435px;
+        width: 900px;
         padding: $spacing;
     }
 
-    &__link {
+    &__header {
+        height: 100%;
+        width: 100%;
+        background-color: red;
+        color: azure;
+        text-align: center;
+    }
+
+    &__headerLink {
+        width: 30%;
         color: red;
+        text-align: right;
+        justify-content: right;
+        padding-top: 100;
+        padding-bottom: 100;
     }
 
     &__form {
@@ -23,16 +37,16 @@
 
         .app-form__submit {
             background-color: red;
-            color:azure;
+            color: azure;
             border-color: red;
         }
 
         .form-row {
             margin-bottom: $spacing-half;
         }
-    }
 
-    &__link {
-        color: red;
+        .form-label {
+            text-decoration-color: red;
+        }
     }
 }
