@@ -6,6 +6,7 @@ const AsyncDashboard = PageLoadable({ loader: () => import('./Dashboard') });
 const AsyncSignUp = PageLoadable({ loader: () => import('./SignUp') });
 const AsyncForgotPassword = PageLoadable({ loader: () => import('./ForgotPassword') });
 const AsyncRegister = PageLoadable({ loader: () => import('./Register') });
+const AsyncRegisterPayment = PageLoadable({ loader: () => import('./RegisterPayment') });
 const AsyncSell = PageLoadable({ loader: () => import('./Sell') });
 const AsyncAuctionList = PageLoadable({ loader: () => import('./AuctionList') });
 const AsyncAuctionUnit = PageLoadable({ loader: () => import('./AuctionUnit') });
@@ -50,6 +51,11 @@ const routes = {
         component: AsyncAuctionUnit,
         path: '/auction-unit',
         authedRoute: true
+    },
+    REGISTER_PAYMENT: {
+        component: AsyncRegisterPayment,
+        path: '',
+        authedRoute: false
     },
     // ROUTE ENTRY CODE GENERATOR INDICATOR DO NOT DELETE
     NOT_FOUND: {
