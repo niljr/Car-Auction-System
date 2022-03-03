@@ -15,7 +15,6 @@ type Props = {
 export default function AuctionListScreen({ menu, tableHeader, carList }: Props): JSX.Element {
     return (
         <div className='auction-list'>
-            <CollapsibleSidebar menu={menu} />
 
             <div className='auction-list__content'>
                 <Typography size={40} weight='bold'>Auction List</Typography>

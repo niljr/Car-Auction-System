@@ -35,8 +35,9 @@ const routes = {
     },
     REGISTER: {
         component: AsyncRegister,
-        path: '',
+        path: '/register',
         authedRoute: false
+    },
     SELL: {
         component: AsyncSell,
         path: '/sell',
@@ -54,7 +55,7 @@ const routes = {
     },
     REGISTER_PAYMENT: {
         component: AsyncRegisterPayment,
-        path: '',
+        path: '/register-payment',
         authedRoute: false
     },
     // ROUTE ENTRY CODE GENERATOR INDICATOR DO NOT DELETE

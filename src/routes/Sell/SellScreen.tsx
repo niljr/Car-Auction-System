@@ -15,7 +15,6 @@ type Props = {
 export default function SellScreen({ menu }: Props): JSX.Element {
     return (
         <div className='sell'>
-            <CollapsibleSidebar menu={menu} />
 
             <div className='sell__content'>
                 <Typography size={40} weight='bold'>Sell Your Car!</Typography>
